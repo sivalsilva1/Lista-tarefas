@@ -62,8 +62,8 @@
 
 ### Passo 1: Clonar o Repositório
 ```bash
-git clone https://github.com/fabiotoniati/fono-2605.git
-cd fono-2605
+git clone https://github.com/sivalsilva1/Lista-tarefas.git
+cd Lista-tarefas
 ```
 
 ### Passo 2: Instalar as Dependências
