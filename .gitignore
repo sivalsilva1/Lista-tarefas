@@ -47,3 +47,7 @@ Thumbs.db
 # Testing & Coverage
 coverage/
 .nyc_output/
+
+# Local deployment scripts
+push_to_github.ps1
+push_to_github.bat
