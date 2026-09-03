@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <meta name="description" content="TaskFlow — Gerencie suas tarefas com produtividade: categorias, prioridades, datas de vencimento, filtros e análises em tempo real." />
+    <meta name="theme-color" content="#4f46e5" />
+    <meta property="og:title" content="TaskFlow — Lista de Tarefas" />
+    <meta property="og:description" content="Aplicativo moderno de gerenciamento de tarefas com categorias, prioridades e análises de produtividade." />
+    <meta property="og:type" content="website" />
+    <title>TaskFlow — Lista de Tarefas</title>
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('atg_todo_theme_v1');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || (!saved && prefersDark)) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
